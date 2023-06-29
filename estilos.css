@@ -1,0 +1,607 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url(img/fondo-minimercado-byw.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.logo-header {
+    height: 20%;
+    margin: 5%;
+}
+
+.img-header {
+    width: 10%;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 68%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    text-shadow: 5px 5px 5px black;
+}
+
+.titulo h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+.navegador {
+    display: flex;
+    width: 100%;
+    height: 12%;
+    background-color: black;
+}
+
+.navegador ul {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navegador ul li {
+    display: inline;
+}
+
+.navegador ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+a:hover {
+    color: red !important;
+}
+
+@media screen and (max-width: 500px) { 
+    .navegador ul {
+        font-size: 8px;
+    }
+    
+}
+
+@media screen and (max-width: 560px)
+{
+    .img-header {
+        width: 20%;
+    }
+
+    .titulo h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .navegador ul {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+.contenedor-boton {
+    width: 5%;
+    height: 0.1%;
+    display: flex;
+    position: sticky;
+    float: right;
+    padding: 10px;
+    top: 90%;
+}
+
+.botonestatico a img {
+    width: 80px;
+}
+
+
+.secciones {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+    border-radius: 30px;
+    background-color: bisque;
+    border: 2px solid black;
+    margin-top: 8%;
+    box-shadow: 10px 10px 5px black;
+}
+
+
+#productos-destacados {
+    width: 80%;
+}
+
+.div-seccion-name {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+span {
+    color: blue;
+}
+
+.div-der {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.card-lateral {    
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 40%;
+    margin-top: 20px;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    color: white;
+    text-align: center;
+    box-shadow: 8px 8px 10px black;
+}
+
+.img-prod-lateral {
+    width: 55%;
+    height: 70%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 10px white;
+}
+
+.prod1 {
+    background-image: url(img/leche-entera.webp);
+}
+
+.prod2 {
+    background-image: url(img/roast-beef.jpg);
+}
+
+.prod3 {
+    background-image: url(img/tomate-redondo.jpg);
+}
+
+.prod4 {
+    background-image: url(img/espadol.jpg);
+}
+
+
+.prod5 {
+    background-image: url(img/lavandina.webp);
+}
+
+
+.prod6 {
+    background-image: url(img/pan-flauta.webp);
+}
+
+.info-prod {
+    padding: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 560px) {
+    .seccion-izq {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .div-seccion-name {
+        display: flex;
+        width: 100%;
+        height: 10%;
+        text-align: center;
+    }
+
+    .div-der {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 90%;
+    }
+
+    .card-lateral {
+        width: 45%;
+        height: 25%;
+        margin-top: 5px;
+    }
+
+    .contenedor-boton {
+        margin-right: 15px;
+        top: 80%;
+    }
+
+    .botonestatico a img {
+        width: 50px;
+    }
+}
+
+
+#almacen {
+    width: 80%;
+}
+
+.div-izq-2 {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prod2b {
+    background-image: url(img/lata-atun.webp);
+}
+
+.prod3b {
+    background-image: url(img/oreo.jpg);
+}
+
+.prod4b {
+    background-image: url(img/crema-leche.jpg);
+}
+
+.prod5b {
+    background-image: url(img/azucar.webp);
+}
+
+.prod6b {
+    background-image: url(img/aceite-natura.jpg);
+}
+
+@media screen and (max-width: 560px) 
+{
+    #almacen {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: 100%;
+    }    
+
+    .div-izq-2 {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 90%;
+    }
+}
+
+
+
+#carniceria {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-seccion-name-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-card-centro
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 35%;
+    height: 40%;
+    margin-top: 20px;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    color: white;
+    text-align: center;
+    box-shadow: 8px 8px 10px black;
+}
+
+.img-prod-centro {
+    height: 65%;
+}
+
+.prod2c {
+    background-image: url(img/asado.webp);
+}
+
+.prod3c {
+    background-image: url(img/bife-angosto.jpg);
+}
+
+.prod4c {
+    background-image: url(img/vacio.jpg);
+}
+
+.prod5c {
+    background-image: url(img/chorizo.webp);
+}
+
+.prod6c {
+    background-image: url(img/morcilla.jpg);
+}
+
+
+.prod7c {
+    background-image: url(img/chinchulin.webp);
+}
+
+.prod8c {
+    background-image: url(img/provoleta.png);
+}
+
+
+@media screen and (max-width:560px) {
+    
+    .seccion-centro {
+        display: flex;
+        flex-direction: column;
+        height: 140%;
+   }
+
+    .order1
+    {
+        display: flex;
+        order: -1;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 10%;
+    }
+
+   
+    .container-card-centro-main {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        height: 45%;
+    }
+
+    .container-card-centro {
+        display: flex;
+        align-items: flex-start;
+        width: 45%;
+        height: 40%;
+        margin-top: 5px;
+    }
+}
+
+
+#verduleria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.prod2d {
+    background-image: url(img/criolla.webp);
+}
+
+.prod3d {
+    background-image: url(img/zanahoria.jpg);
+}
+
+.prod4d {
+    background-image: url(img/zapallitos.jpg);
+}
+
+.prod5d {
+    background-image: url(img/morron-rojo.png);
+}
+
+.prod6d {
+    background-image: url(img/papa-negra.webp);
+}
+
+
+
+#limpieza {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+
+.prod2e {
+    background-image: url(img/jabon-liquido.webp);
+}
+
+.prod3e {
+    background-image: url(img/desodorante-depiso.webp);
+}
+
+
+.prod4e {
+    background-image: url(img/cera-piso.webp);
+}
+
+.prod5e {
+    background-image: url(img/suavizante-ropa.webp.webp);
+}
+
+
+.prod6e {
+    background-image: url(img/lysoform.png);
+}
+
+.prod7e {
+    background-image: url(img/higienico.webp);
+}
+
+.prod8e {
+    background-image: url(img/trapo-piso.jpg);
+}
+
+
+
+
+
+#panaderia {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.prod2f {
+    background-image: url(img/facturas.jpg);
+}
+
+.prod3f {
+    background-image: url(img/mini-torta.jpg);
+}
+
+
+.prod4f {
+    background-image: url(img/masitas.jpg);
+}
+
+.prod5f {
+    background-image: url(img/sanguchito.miga.jpg);
+}
+
+.prod6f {
+    background-image: url(img/pepas.webp);
+}
+
+
+
+
+.pie-pag {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+    height: 20%;
+    background-color: bisque;
+    border-top: 2px solid black;
+}
+
+
+.texto-pie {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 2px;
+}
+
+.redes-pie {
+    width: 70%;
+    text-align: center;
+}
+
+.redes-pie ul {
+    list-style: none;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redes-pie ul li {
+    display: inline-block;
+}
+
+.redes-pie ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+
+.img-logo-footer {
+    width: 20px;
+}
+
+
+@media screen and (max-width:560px) {       
+
+    .pie-pag {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-pie {
+        height: 20%;
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+
+    .redes-pie {
+        width: 100%;
+        height: 80%;
+    }
+
+    .redes-pie ul {
+        display: flex;
+        justify-content: space-evenly;
+    }  
+
+    .redes-pie ul li {
+        padding-left: 8px;
+    }
+
+    
+    .redes-pie ul li a {
+        padding: 10px;
+    }
+
+    .img-logo-footer {
+        width: 25px;
+    }
+
+
+}
+
+
+
+
